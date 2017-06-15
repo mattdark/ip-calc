@@ -19,8 +19,8 @@ nh = (2 ** m) - 2
 bits = 32 - (m - 1)
 msk = ('1' * bits) + ('0' * (m-1))
 octect = re.findall('.{1,8}', msk)
-mask = ''
 
+mask = ''
 for i in octect:
     mask += str(int(i, 2)) + '.'
 mask = mask[:-1]
